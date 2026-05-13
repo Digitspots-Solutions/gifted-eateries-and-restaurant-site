@@ -1,0 +1,70 @@
+{
+  "businessName": "Gifted Eateries and Restaurant",
+  "industry": "Food & Catering",
+  "tone": "warm, inviting, professional",
+  "tagline": "Where Quality Meets Taste in Every Meal",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to Gifted Eateries and Restaurant - Your trusted partner for exceptional meals and catering services in Ikene and beyond. From intimate gatherings to grand celebrations, we bring authentic Nigerian flavors and professional service to your table. Experience the gift of great food, crafted with passion and served with excellence.",
+      "imagePrompt": "Photorealistic image of a beautifully arranged Nigerian buffet spread with jollof rice, fried rice, chicken, beef, moin moin, and salad on elegant white platters, set on a pristine white tablecloth with warm golden lighting, professional catering setup in a modern Nigerian event hall, shallow depth of field, appetizing steam rising from hot dishes",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "Gifted Eateries and Restaurant is a premier food manufacturing and catering business based in the heart of Ikene, Ogun State. We specialize in delivering mouth-watering Nigerian cuisine and comprehensive catering services for weddings, corporate events, parties, and everyday dining. Our commitment to quality ingredients, hygienic food preparation, and timely delivery has made us the first choice for discerning clients across Ogun State. Whether you need meals for 20 or 2,000 guests, our experienced team ensures every dish meets the highest standards of taste and presentation.",
+      "imagePrompt": "Photorealistic image of a modern Nigerian commercial kitchen with stainless steel equipment, professional chefs in white uniforms and hairnets preparing food, clean organized workspace with fresh vegetables and ingredients on prep tables, bright fluorescent lighting, food safety standards visible, warm and professional atmosphere",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "**Wedding Catering** - Make your special day unforgettable with our premium wedding packages. We handle everything from small talk (small chops) to full reception meals, ensuring your guests enjoy exceptional cuisine.\n\n**Corporate & Event Catering** - Professional catering for conferences, seminars, product launches, and corporate gatherings. Flexible menu options and punctual service guaranteed.\n\n**Party Packages** - Birthday parties, anniversaries, naming ceremonies, and family celebrations. Customized menus to suit your budget and guest count.\n\n**Daily Meals & Takeaway** - Fresh, delicious Nigerian meals prepared daily. Perfect for busy professionals and families who want quality homemade taste.\n\n**Small Chops & Finger Foods** - Crispy spring rolls, puff puff, samosa, chicken wings, peppered snails, and more. Ideal for cocktails and receptions.\n\n**Bulk Food Production** - Large-scale meal preparation for schools, organizations, and institutions. Consistent quality and competitive pricing.",
+      "imagePrompt": "Photorealistic grid layout showing six different Nigerian catering scenes: elegant wedding reception setup, corporate buffet lunch, colorful birthday party spread, takeaway containers with meals, assorted small chops on serving trays, and large industrial food containers for bulk catering, bright professional photography, each scene vibrant and appetizing",
+      "layout": "grid"
+    },
+    {
+      "id": "menu",
+      "name": "Sample Menu",
+      "copy": "**Nigerian Favorites**\nJollof Rice | Fried Rice | Native Rice | Ofada Rice with Ayamase Sauce | White Rice\n\n**Protein Options**\nFried Chicken | Grilled Chicken | Beef Stew | Goat Meat | Turkey | Fresh Fish | Peppered Snails\n\n**Soups & Swallow**\nEgusi Soup | Efo Riro | Ogbono | Ewedu | Banga Soup | Served with Eba, Amala, Pounded Yam, or Fufu\n\n**Sides & Extras**\nMoin Moin | Fried Plantain | Coleslaw | Garden Salad | Peppered Sauce\n\n**Small Chops**\nSpring Rolls | Puff Puff | Samosa | Chicken Pies | Sausage Rolls | Peppered Gizzard\n\n**Drinks**\nFreshly Squeezed Juices | Zobo | Chapman | Soft Drinks\n\n*Custom menus available upon request. All meals prepared with fresh ingredients and served hot.*",
+      "imagePrompt": "Photorealistic overhead flat lay of various Nigerian dishes artfully arranged on a rustic wooden table: steaming jollof rice in a clay pot, golden fried chicken pieces, rich red stew, fresh green vegetables, moin moin in leaves, fried plantain, colorful salad, traditional earthenware, natural daylight photography, vibrant colors, professional food styling",
+      "layout": "cards"
+    },
+    {
+      "id": "why-choose-us",
+      "name": "Why Choose Gifted Eateries",
+      "copy": "**Hygiene & Quality Assurance** - We maintain the highest standards of food safety and cleanliness in our kitchen. Every meal is prepared in a sanitized environment with quality-checked ingredients.\n\n**Experienced Team** - Our skilled chefs and service staff bring years of experience in Nigerian cuisine and event catering, ensuring flawless execution every time.\n\n**Flexible Packages** - Whether you're planning an intimate gathering or a large celebration, we offer customizable packages to fit your budget and preferences.\n\n**Timely Delivery** - We understand the importance of punctuality. Your meals arrive fresh, hot, and exactly when you need them.\n\n**Competitive Pricing** - Quality food doesn't have to break the bank. We offer excellent value for money without compromising on taste or presentation.\n\n**Local Expertise** - As a proud Ikene-based business, we understand the local palate and cultural preferences, making us your ideal catering partner.",
+      "imagePrompt": "Photorealistic image of happy Nigerian guests at an outdoor event enjoying food from elegant buffet tables, smiling faces, colorful traditional attire, white catering tents in background, professional waiters serving, lush green Nigerian landscape, golden hour lighting, joyful celebration atmosphere, candid documentary style photography",
+      "layout": "default"
+    },
+    {
+      "id": "testimonials",
+      "name": "What Our Clients Say",
+      "copy": "**Mrs. Adenike Johnson** - *\"Gifted Eateries catered my daughter's wedding and the food was absolutely outstanding! Guests kept asking for the caterer's contact. Professional service from start to finish.\"*\n\n**Chief Oladipo Enterprises** - *\"We've been using Gifted Eateries for all our corporate events for the past two years. Reliable, punctual, and the food is always top quality. Highly recommended!\"*\n\n**Pastor & Mrs. Adeyemi** - *\"From our church programs to family gatherings, Gifted Eateries has never disappointed. The jollof rice is always a hit, and their customer service is exceptional.\"*\n\n**Mr. Benson Okoli** - *\"Best catering service in Ikene! The variety of dishes, the taste, and the presentation - everything was perfect for our company anniversary. Worth every naira.\"*",
+      "imagePrompt": "Photorealistic image of diverse happy Nigerian customers giving thumbs up at a well-decorated event venue, elegant table settings with beautiful food presentation in foreground, warm ambient lighting, authentic smiles, mix of traditional and modern Nigerian attire, professional event photography style",
+      "layout": "cards"
+    },
+    {
+      "id": "gallery",
+      "name": "Our Work",
+      "copy": "Explore our portfolio of beautifully executed events and mouth-watering dishes. From intimate family gatherings to grand celebrations, each project showcases our commitment to excellence, attention to detail, and passion for Nigerian cuisine. See why Gifted Eateries and Restaurant is the first choice for catering in Ikene and surrounding areas.",
+      "imagePrompt": "Photorealistic collage showing multiple Nigerian catering events: elegant wedding high table with gold decorations, colorful birthday buffet setup, corporate lunch boxes neatly arranged, traditional owambe party with guests dancing, close-up of perfectly garnished dishes, professional service staff in action, vibrant and dynamic composition, professional event photography quality",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Get In Touch",
+      "copy": "Ready to experience the Gifted difference? Contact us today to discuss your catering needs, request a quote, or place an order. Whether you're planning a wedding, corporate event, or simply want delicious meals delivered to your doorstep, we're here to serve you.\n\n**Visit Our Kitchen:**\nMr. Ola's Compound, Off Agowoye Rd, opposite Aloshinloye House, Ilisan Remo, Ogun State\n\n**Service Areas:**\nIkene, Sagamu, Ijebu-Ode, Remo, and all of Ogun State\n\n**Operating Hours:**\nMonday - Saturday: 8:00 AM - 8:00 PM\nSunday: Available for pre-booked events\n\nFor immediate assistance, call or WhatsApp us. We respond quickly to all inquiries and look forward to serving you!",
+      "imagePrompt": "Photorealistic image of a welcoming Nigerian restaurant front entrance with 'Gifted Eateries and Restaurant' signage, clean modern exterior, potted plants, glass doors showing glimpse of interior, professional business facade, bright daylight, inviting atmosphere, local Ogun State architectural style, smartphone in foreground showing WhatsApp chat with the business",
+      "layout": "split"
+    }
+  ],
+  "contact": {
+    "phone": "08034593244",
+    "email": "info@giftedeateries.com",
+    "address": "Mr. Ola's Compound, Off Agowoye Rd, opposite Aloshinloye House, Ilisan Remo, Ogun State",
+    "whatsapp": "https://wa.me/2348034593244"
+  }
+}
