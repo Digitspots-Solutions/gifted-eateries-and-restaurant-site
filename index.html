@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gifted Eateries and Restaurant - Where Quality Meets Taste in Every Meal</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=Figtree:wght@300;400;500&display=swap">
+    <title>Brigail Oilfield Equipment Limited - Your Trusted Partner in Oilfield Equipment and Drilling Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #040b10;
-            --color-accent: #f24f03;
-            --color-bg: #F6F6F6;
-            --color-text: #081220;
-            --color-surface: #0d1825;
-            --color-secondary-accent: #05a442;
-            --font-display: 'Kanit', sans-serif;
-            --font-body: 'Figtree', sans-serif;
-            --border-radius: 14px;
+            --color-primary: #0a1b2a;
+            --color-accent: #d39515;
+            --color-bg: #F5F2EE;
+            --color-text: #091829;
+            --color-surface: #122642;
+            --color-secondary-accent: #4d8e9e;
+            --font-display: 'Libre Baskerville', serif;
+            --font-body: 'Manrope', sans-serif;
+            --border-radius: 2px;
         }
 
         * {
@@ -32,13 +34,14 @@
             font-family: var(--font-body);
             color: var(--color-text);
             background-color: var(--color-bg);
-            line-height: 1.6;
+            line-height: 1.7;
+            font-weight: 400;
         }
 
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-display);
             font-weight: 700;
-            line-height: 1.2;
+            line-height: 1.3;
         }
 
         @keyframes fadeUp {
@@ -56,16 +59,17 @@
         nav {
             position: sticky;
             top: 0;
-            background: rgba(246, 246, 246, 0.95);
+            background: rgba(10, 27, 42, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
+            padding: 1rem 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .nav-container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 1rem 2rem;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -73,21 +77,23 @@
 
         .logo {
             font-family: var(--font-display);
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
-            color: var(--color-primary);
+            color: var(--color-accent);
+            text-decoration: none;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .nav-links a {
+            color: #ffffff;
             text-decoration: none;
-            color: var(--color-text);
             font-weight: 500;
+            font-size: 0.95rem;
             transition: color 0.3s ease;
         }
 
@@ -95,7 +101,6 @@
             color: var(--color-accent);
         }
 
-        /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
@@ -106,7 +111,7 @@
         .mobile-menu-btn span {
             width: 25px;
             height: 3px;
-            background: var(--color-text);
+            background: #ffffff;
             transition: all 0.3s ease;
             transform-origin: center;
         }
@@ -123,15 +128,14 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
 
-        /* Mobile Menu */
         .mobile-menu {
             position: fixed;
             top: 70px;
             right: -100%;
             width: 300px;
             height: calc(100vh - 70px);
-            background: var(--color-bg);
-            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            background: var(--color-primary);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.3);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -151,7 +155,7 @@
 
         .mobile-menu ul a {
             text-decoration: none;
-            color: var(--color-text);
+            color: #ffffff;
             font-size: 1.1rem;
             font-weight: 500;
             transition: color 0.3s ease;
@@ -171,7 +175,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: white;
+            color: #ffffff;
             overflow: hidden;
             animation: fadeUp 0.6s ease forwards;
         }
@@ -183,7 +187,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -2;
+            z-index: 0;
         }
 
         .hero-overlay {
@@ -193,66 +197,71 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.55);
-            z-index: -1;
+            z-index: 1;
         }
 
         .hero-content {
-            max-width: 900px;
-            padding: 2rem;
-            z-index: 1;
+            position: relative;
+            z-index: 2;
+            max-width: 1100px;
+            padding: 0 2rem;
         }
 
         .hero-content h1 {
             font-size: 3.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .hero-tagline {
-            font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            font-weight: 300;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            color: var(--color-accent);
         }
 
         .hero-content p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
             line-height: 1.8;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .cta-button {
             display: inline-block;
+            padding: 1rem 3rem;
             background: var(--color-accent);
-            color: white;
-            padding: 1rem 2.5rem;
+            color: var(--color-primary);
             text-decoration: none;
-            border-radius: var(--border-radius);
             font-weight: 600;
             font-size: 1.1rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 15px rgba(242, 79, 3, 0.4);
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(211, 149, 21, 0.3);
         }
 
         .cta-button:hover {
+            background: #e5a61a;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(242, 79, 3, 0.6);
+            box-shadow: 0 6px 20px rgba(211, 149, 21, 0.4);
         }
 
-        /* Section Styling */
+        /* Section Styles */
         section {
             padding: 80px 2rem;
             animation: fadeUp 0.6s ease forwards;
         }
 
-        section:nth-child(2) { animation-delay: 0.1s; }
-        section:nth-child(3) { animation-delay: 0.2s; }
-        section:nth-child(4) { animation-delay: 0.3s; }
-        section:nth-child(5) { animation-delay: 0.4s; }
-        section:nth-child(6) { animation-delay: 0.5s; }
-        section:nth-child(7) { animation-delay: 0.6s; }
-        section:nth-child(8) { animation-delay: 0.7s; }
+        section:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        section:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        section:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        section:nth-child(5) {
+            animation-delay: 0.4s;
+        }
 
         .container {
             max-width: 1400px;
@@ -260,26 +269,52 @@
         }
 
         .section-title {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 1rem;
             color: var(--color-primary);
             text-align: center;
         }
 
         .section-subtitle {
+            font-size: 1.15rem;
+            color: var(--color-secondary-accent);
             text-align: center;
-            font-size: 1.1rem;
-            color: var(--color-text);
-            max-width: 800px;
-            margin: 0 auto 3rem;
+            margin-bottom: 3rem;
+            font-family: var(--font-body);
         }
 
-        /* About Section - Split Layout */
+        .subsurface-separator {
+            height: 6px;
+            width: 100%;
+            background: linear-gradient(to right, 
+                rgba(10, 27, 42, 0.1) 0%, 
+                rgba(10, 27, 42, 0.3) 25%, 
+                rgba(211, 149, 21, 0.4) 50%, 
+                rgba(10, 27, 42, 0.3) 75%, 
+                rgba(10, 27, 42, 0.1) 100%);
+            margin: 60px 0;
+            position: relative;
+        }
+
+        .subsurface-separator::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, 
+                transparent 0%, 
+                rgba(77, 142, 158, 0.3) 50%, 
+                transparent 100%);
+        }
+
+        /* About Section */
         #about {
-            background: white;
+            background: #ffffff;
         }
 
-        .split-layout {
+        .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -291,291 +326,174 @@
             height: 500px;
             object-fit: cover;
             border-radius: var(--border-radius);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
         }
 
-        .about-content h2 {
-            margin-bottom: 1.5rem;
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
         }
 
-        .about-content p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            color: var(--color-text);
-        }
-
-        /* Services Section - Grid Layout */
+        /* Services Section */
         #services {
             background: var(--color-surface);
-            color: white;
+            color: #ffffff;
         }
 
         #services .section-title {
-            color: white;
+            color: var(--color-accent);
+        }
+
+        #services .section-subtitle {
+            color: rgba(255, 255, 255, 0.8);
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
+            margin-top: 3rem;
         }
 
         .service-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
             border-radius: var(--border-radius);
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid var(--color-accent);
+            transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(242, 79, 3, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         }
 
         .service-card h3 {
             color: var(--color-accent);
-            margin-bottom: 1rem;
             font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .service-card p {
-            line-height: 1.7;
-        }
-
-        /* Menu Section */
-        #menu {
-            background: white;
-        }
-
-        .menu-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .menu-category {
-            background: var(--color-bg);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            border-left: 4px solid var(--color-accent);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .menu-category h3 {
-            color: var(--color-primary);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .menu-category p {
-            line-height: 1.9;
-            font-size: 1.05rem;
-        }
-
-        .menu-note {
-            margin-top: 2rem;
-            font-style: italic;
-            text-align: center;
-            color: var(--color-text);
-            opacity: 0.8;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
         }
 
         /* Why Choose Us Section */
         #why-choose-us {
-            background: var(--color-bg);
+            background: #ffffff;
         }
 
-        .features-grid {
+        .why-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
         }
 
-        .feature-card {
-            background: white;
-            padding: 2rem;
+        .why-card {
+            background: var(--color-bg);
+            padding: 2.5rem;
             border-radius: var(--border-radius);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            border-top: 4px solid var(--color-secondary-accent);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
 
-        .feature-card:hover {
+        .why-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            border-top-color: var(--color-accent);
         }
 
-        .feature-card h3 {
-            color: var(--color-accent);
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-        }
-
-        .feature-card p {
-            line-height: 1.7;
-        }
-
-        /* Testimonials Section */
-        #testimonials {
-            background: white;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-        }
-
-        .testimonial-card {
-            background: var(--color-bg);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            border-left: 4px solid var(--color-secondary-accent);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .testimonial-card h4 {
+        .why-card h3 {
             color: var(--color-primary);
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
 
-        .testimonial-card em {
-            color: var(--color-accent);
-            font-size: 0.95rem;
-        }
-
-        .testimonial-card p {
-            margin-top: 1rem;
-            line-height: 1.7;
-            font-style: italic;
-        }
-
-        /* Gallery Section */
-        #gallery {
-            background: var(--color-surface);
-            color: white;
-        }
-
-        #gallery .section-title {
-            color: white;
-        }
-
-        .gallery-intro {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 3rem;
-            font-size: 1.1rem;
+        .why-card p {
             line-height: 1.8;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .gallery-item {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: var(--border-radius);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
+            color: var(--color-text);
         }
 
         /* Contact Section */
         #contact {
-            background: white;
+            background: var(--color-primary);
+            color: #ffffff;
+            text-align: center;
         }
 
-        .contact-split {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
+        #contact .section-title {
+            color: var(--color-accent);
         }
 
-        .contact-content h2 {
-            margin-bottom: 1.5rem;
+        #contact .section-subtitle {
+            color: rgba(255, 255, 255, 0.8);
         }
 
-        .contact-content p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            margin-bottom: 2rem;
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        .contact-info {
-            background: var(--color-bg);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            margin-bottom: 2rem;
+        .contact-intro {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 3rem;
+            color: rgba(255, 255, 255, 0.9);
         }
 
-        .contact-info h3 {
-            color: var(--color-primary);
-            margin-bottom: 1rem;
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
         }
 
         .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-            gap: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            border-left: 3px solid var(--color-accent);
         }
 
         .contact-item a {
             color: var(--color-accent);
             text-decoration: none;
             font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
         }
 
         .contact-item a:hover {
-            text-decoration: underline;
+            color: #e5a61a;
         }
 
-        .contact-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
+        .contact-item p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.8;
         }
 
-        .contact-button {
+        .whatsapp-cta {
             display: inline-block;
-            padding: 1rem 2rem;
-            border-radius: var(--border-radius);
+            padding: 1.2rem 3rem;
+            background: #25D366;
+            color: #ffffff;
             text-decoration: none;
             font-weight: 600;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .contact-button.primary {
-            background: var(--color-accent);
-            color: white;
-            box-shadow: 0 4px 15px rgba(242, 79, 3, 0.4);
-        }
-
-        .contact-button.whatsapp {
-            background: #25D366;
-            color: white;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-        }
-
-        .contact-button:hover {
-            transform: translateY(-2px);
-        }
-
-        .contact-image {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
+            font-size: 1.1rem;
             border-radius: var(--border-radius);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-cta:hover {
+            background: #20ba5a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
         }
 
         /* WhatsApp Floating Button */
@@ -583,50 +501,50 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: #25D366;
-            color: white;
             width: 60px;
             height: 60px;
+            background: #25D366;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
             z-index: 999;
+            transition: all 0.3s ease;
             text-decoration: none;
-            transition: transform 0.3s ease;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-float::before {
+            content: '💬';
+            font-size: 28px;
         }
 
         /* Footer */
         footer {
-            background: var(--color-primary);
-            color: white;
+            background: var(--color-surface);
+            color: rgba(255, 255, 255, 0.8);
             text-align: center;
             padding: 2rem;
             font-size: 0.95rem;
         }
 
-        footer p {
-            margin-bottom: 0.5rem;
-        }
-
         /* Responsive */
         @media (max-width: 1024px) {
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
 
             .section-title {
-                font-size: 2rem;
+                font-size: 2.3rem;
             }
 
-            section {
-                padding: 60px 1.5rem;
+            .about-content {
+                gap: 3rem;
             }
         }
 
@@ -639,60 +557,83 @@
                 display: flex;
             }
 
+            section {
+                padding: 48px 1.5rem;
+            }
+
             .hero-content h1 {
                 font-size: 2rem;
             }
 
-            .hero-tagline {
-                font-size: 1.2rem;
+            .hero-content p {
+                font-size: 1.05rem;
             }
 
-            .split-layout,
-            .contact-split {
+            .section-title {
+                font-size: 1.9rem;
+            }
+
+            .about-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
 
-            .about-image,
-            .contact-image {
+            .about-image {
                 height: 350px;
             }
 
-            section {
-                padding: 48px 1rem;
-            }
-
             .services-grid,
-            .menu-grid,
-            .features-grid,
-            .testimonials-grid,
-            .gallery-grid {
+            .why-grid {
                 grid-template-columns: 1fr;
             }
 
             .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                font-size: 1.5rem;
+                width: 55px;
+                height: 55px;
                 bottom: 20px;
                 right: 20px;
+            }
+
+            .whatsapp-float::before {
+                font-size: 24px;
+            }
+
+            .subsurface-separator {
+                margin: 40px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.6rem;
+            }
+
+            .cta-button {
+                padding: 0.9rem 2rem;
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .service-card,
+            .why-card {
+                padding: 2rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+
     <nav>
         <div class="nav-container">
-            <div class="logo">Gifted Eateries</div>
+            <a href="#hero" class="logo">Brigail Oilfield</a>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#why-choose-us">Why Us</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -706,157 +647,160 @@
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#why-choose-us">Why Us</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="hero">
-        <img src="https://images.pexels.com/photos/17485680/pexels-photo-17485680.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Nigerian buffet spread" class="hero-image">
+        <img src="https://images.pexels.com/photos/11139595/pexels-photo-11139595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Offshore Oil Rig" class="hero-image">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Gifted Eateries and Restaurant</h1>
-            <p class="hero-tagline">Where Quality Meets Taste in Every Meal</p>
-            <p>Welcome to Gifted Eateries and Restaurant - Your trusted partner for exceptional meals and catering services in Ikene and beyond. From intimate gatherings to grand celebrations, we bring authentic Nigerian flavors and professional service to your table. Experience the gift of great food, crafted with passion and served with excellence.</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <h1>Brigail Oilfield Equipment Limited</h1>
+            <p>Leading provider of premium oilfield equipment and drilling tools across Nigeria. With deep industry expertise and commitment to excellence, we supply world-class equipment that powers Nigeria's energy sector. Certified. Reliable. Professional.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
-            <div class="split-layout">
-                <img src="https://images.pexels.com/photos/32184490/pexels-photo-32184490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Modern commercial kitchen" class="about-image">
-                <div class="about-content">
-                    <h2>About Us</h2>
-                    <p>Gifted Eateries and Restaurant is a premier food manufacturing and catering business based in the heart of Ikene, Ogun State. We specialize in delivering mouth-watering Nigerian cuisine and comprehensive catering services for weddings, corporate events, parties, and everyday dining. Our commitment to quality ingredients, hygienic food preparation, and timely delivery has made us the first choice for discerning clients across Ogun State. Whether you need meals for 20 or 2,000 guests, our experienced team ensures every dish meets the highest standards of taste and presentation.</p>
+            <h2 class="section-title">About Us</h2>
+            <p class="section-subtitle">Your Trusted Partner in Oilfield Equipment and Drilling Solutions</p>
+            <div class="about-content">
+                <img src="https://images.pexels.com/photos/37198881/pexels-photo-37198881.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Brigail Office" class="about-image">
+                <div class="about-text">
+                    <p>Brigail Oilfield Equipment Limited (also trading as Brigail Drilling Tools Co) is a Nigerian-owned enterprise specializing in the supply of high-quality oilfield equipment and drilling tools to the energy sector. Led by experienced energy sector consultants, we understand the critical demands of oil and gas operations and provide equipment solutions that meet international standards.</p>
+                    <p>Based in Ikene, Ogun State, we serve clients across Nigeria's oil-producing regions with integrity, technical expertise, and unwavering commitment to safety and quality. Our mission is to be the preferred supplier of oilfield equipment by delivering reliable products, expert technical support, and exceptional service that keeps Nigeria's energy operations running smoothly.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <div class="subsurface-separator"></div>
+
     <section id="services">
         <div class="container">
             <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive Equipment Supply and Technical Support</p>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Wedding Catering</h3>
-                    <p>Make your special day unforgettable with our premium wedding packages. We handle everything from small talk (small chops) to full reception meals, ensuring your guests enjoy exceptional cuisine.</p>
+                    <h3>Equipment Supply & Procurement</h3>
+                    <p>We source and supply a comprehensive range of oilfield equipment and drilling tools from certified global manufacturers, ensuring quality and compliance with industry standards.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Corporate & Event Catering</h3>
-                    <p>Professional catering for conferences, seminars, product launches, and corporate gatherings. Flexible menu options and punctual service guaranteed.</p>
+                    <h3>Drilling Tools & Accessories</h3>
+                    <p>Complete range of drilling equipment including drill bits, drill collars, stabilizers, reamers, and downhole tools for exploration and production operations.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Party Packages</h3>
-                    <p>Birthday parties, anniversaries, naming ceremonies, and family celebrations. Customized menus to suit your budget and guest count.</p>
+                    <h3>Technical Consultation</h3>
+                    <p>Expert advisory services leveraging our deep energy sector experience to help clients select the right equipment for their specific operational requirements.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Daily Meals & Takeaway</h3>
-                    <p>Fresh, delicious Nigerian meals prepared daily. Perfect for busy professionals and families who want quality homemade taste.</p>
+                    <h3>Equipment Maintenance Support</h3>
+                    <p>Technical guidance and support services to maximize equipment performance, longevity, and operational safety.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Small Chops & Finger Foods</h3>
-                    <p>Crispy spring rolls, puff puff, samosa, chicken wings, peppered snails, and more. Ideal for cocktails and receptions.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Bulk Food Production</h3>
-                    <p>Large-scale meal preparation for schools, organizations, and institutions. Consistent quality and competitive pricing.</p>
+                    <h3>Logistics & Delivery</h3>
+                    <p>Efficient equipment delivery and logistics management to oil and gas sites across Nigeria, ensuring timely project execution.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu">
-        <div class="container">
-            <h2 class="section-title">Sample Menu</h2>
-            <div class="menu-grid">
-                <div class="menu-category">
-                    <h3>Nigerian Favorites</h3>
-                    <p>Jollof Rice | Fried Rice | Native Rice | Ofada Rice with Ayamase Sauce | White Rice</p>
-                </div>
-                <div class="menu-category">
-                    <h3>Protein Options</h3>
-                    <p>Fried Chicken | Grilled Chicken | Beef Stew | Goat Meat | Turkey | Fresh Fish | Peppered Snails</p>
-                </div>
-                <div class="menu-category">
-                    <h3>Soups & Swallow</h3>
-                    <p>Egusi Soup | Efo Riro | Ogbono | Ewedu | Banga Soup | Served with Eba, Amala, Pounded Yam, or Fufu</p>
-                </div>
-                <div class="menu-category">
-                    <h3>Sides & Extras</h3>
-                    <p>Moin Moin | Fried Plantain | Coleslaw | Garden Salad | Peppered Sauce</p>
-                </div>
-                <div class="menu-category">
-                    <h3>Small Chops</h3>
-                    <p>Spring Rolls | Puff Puff | Samosa | Chicken Pies | Sausage Rolls | Peppered Gizzard</p>
-                </div>
-                <div class="menu-category">
-                    <h3>Drinks</h3>
-                    <p>Freshly Squeezed Juices | Zobo | Chapman | Soft Drinks</p>
-                </div>
-            </div>
-            <p class="menu-note">Custom menus available upon request. All meals prepared with fresh ingredients and served hot.</p>
-        </div>
-    </section>
+    <div class="subsurface-separator"></div>
 
-    <!-- Why Choose Us Section -->
     <section id="why-choose-us">
         <div class="container">
-            <h2 class="section-title">Why Choose Gifted Eateries</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Hygiene & Quality Assurance</h3>
-                    <p>We maintain the highest standards of food safety and cleanliness in our kitchen. Every meal is prepared in a sanitized environment with quality-checked ingredients.</p>
+            <h2 class="section-title">Why Choose Brigail</h2>
+            <p class="section-subtitle">Excellence in Every Aspect of Service Delivery</p>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Industry Expertise</h3>
+                    <p>Led by seasoned energy sector consultants with comprehensive understanding of Nigeria's oil and gas operations and equipment requirements.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Experienced Team</h3>
-                    <p>Our skilled chefs and service staff bring years of experience in Nigerian cuisine and event catering, ensuring flawless execution every time.</p>
+                <div class="why-card">
+                    <h3>Quality Assurance</h3>
+                    <p>We supply only certified equipment from reputable manufacturers that meet international quality and safety standards.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Flexible Packages</h3>
-                    <p>Whether you're planning an intimate gathering or a large celebration, we offer customizable packages to fit your budget and preferences.</p>
+                <div class="why-card">
+                    <h3>Reliable Supply Chain</h3>
+                    <p>Established procurement networks ensuring consistent availability of equipment when you need it.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Timely Delivery</h3>
-                    <p>We understand the importance of punctuality. Your meals arrive fresh, hot, and exactly when you need them.</p>
+                <div class="why-card">
+                    <h3>Technical Support</h3>
+                    <p>Our team provides expert guidance to help you make informed equipment decisions that optimize your operations.</p>
                 </div>
-                <div class="feature-card">
+                <div class="why-card">
+                    <h3>Nigerian Presence</h3>
+                    <p>Local company with understanding of the Nigerian business environment and commitment to supporting the nation's energy sector.</p>
+                </div>
+                <div class="why-card">
                     <h3>Competitive Pricing</h3>
-                    <p>Quality food doesn't have to break the bank. We offer excellent value for money without compromising on taste or presentation.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Local Expertise</h3>
-                    <p>As a proud Ikene-based business, we understand the local palate and cultural preferences, making us your ideal catering partner.</p>
+                    <p>Fair, transparent pricing structure that delivers value without compromising on quality.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
+    <div class="subsurface-separator"></div>
+
+    <section id="contact">
         <div class="container">
-            <h2 class="section-title">What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <h4>Mrs. Adenike Johnson</h4>
-                    <p>"Gifted Eateries catered my daughter's wedding and the food was absolutely outstanding! Guests kept asking for the caterer's contact. Professional service from start to finish."</p>
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Let's Discuss Your Equipment Needs</p>
+            <div class="contact-content">
+                <div class="contact-intro">
+                    <p>Ready to discuss your oilfield equipment needs? Contact Brigail Oilfield Equipment Limited today. Our team of energy sector professionals is ready to provide expert consultation and supply solutions tailored to your requirements.</p>
+                    <p>Whether you need drilling tools, oilfield equipment, or technical advisory services, we're here to support your operations with quality products and reliable service.</p>
+                    <p>Visit our office in Ikene, Ogun State, call us directly, or send a WhatsApp message for quick response. Let's power Nigeria's energy sector together.</p>
                 </div>
-                <div class="testimonial-card">
-                    <h4>Chief Oladipo Enterprises</h4>
-                    <p>"We've been using Gifted Eateries for all our corporate events for the past two years. Reliable, punctual, and the food is always top quality. Highly recommended!"</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>Phone:</strong><br>
+                        <a href="tel:+2348034593244">+234 803 459 3244</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:info@brigail.com">info@brigail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Office Address:</strong><br>
+                        <p>Mr. Ola's Compound, Off Agowoye Rd, opposite Aloshinloye House, Ilisan Remo, Ikene, Ogun State, Nigeria</p>
+                    </div>
                 </div>
-                <div class="testimonial-card">
-                    <h4>Pastor & Mrs. Adeyemi</h4>
-                    <p>"From our church programs to family gatherings, Gifted Eateries has never disappointed. The jollof rice is always a hit, and their customer service is exceptional."</p>
-                </div>
-                <div class="testimonial-card">
-                    <h4>Mr. Benson Okoli</h4>
-                    <p>"Best catering service
+                <a href="https://wa.me/2348034593244" class="whatsapp-cta" target="_blank">Message Us on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Brigail Oilfield Equipment Limited. All rights reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/2348034593244" class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp"></a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>
